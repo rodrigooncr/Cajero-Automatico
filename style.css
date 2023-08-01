@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+
+
+}
+
+
+body {
+    background: #5f2c82;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+    
+}
+
+form{
+    background-color:white ;
+    text-align: center;
+    font-weight: 700px;
+    padding: 40px 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
+
+form .grupo{
+    position: relative;
+    margin: 20px 0;
+}
+
+
+input{
+    background: none;
+    color: #131212;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #bfc2c1;
+}
+
+input:focus{
+    outline: none;
+    color: rgb(94, 93, 93);
+
+}
+
+label{
+    color: rgb(94, 93, 93);
+    font-size: 1rem;
+    position:absolute;
+    top:10px;
+    left: 5px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+
+}
+
+input:focus~label, input:valid~label{
+    top:-14px;
+    font-size: 13px;
+    color: #8e21f3;
+}
+
+
+button{
+    width: 50%;
+    border: none;
+    background: linear-gradient(to right, #7474bf, #348ac7); 
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 8px;
+}
